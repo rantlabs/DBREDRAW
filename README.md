@@ -77,6 +77,5 @@ dbredraw-apl_arm64
 dbredraw-lnx32
 dbredraw-lnx64
 dbredraw-win32.exe
-```
 dbredraw-win64.exe
 ```
