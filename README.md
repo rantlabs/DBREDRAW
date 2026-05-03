@@ -1,13 +1,13 @@
 # dbredraw
 
-A fast command-line utility for filtering and rebuilding Gather database (GatherDB) files. Given a search term, or a piped input that contains at a list of devices in the first column, it extracts all matching device names and redraws the complete database containing only those devices — producing a full, well-formed subset.
+A fast command-line utility for filtering and rebuilding Gather database (GatherDB) files. Given a search term, or a piped input that contains at a list of devices in the first column, it extracts all matching device names and redraws a complete database containing only those devices — producing a full, well-formed subset.
 
 ## How It Works
 
 dbredraw runs in two passes:
 
 1. **Discovery/Search** — finds all device names that match the search criteria (by searching the DB file, reading device names from stdin, or both)
-2. **Redraw** — streams through the DB file a second time and writes only lines belonging to the matched devices
+2. **Redraw** — streams through the DB file a second time and creates a full new GatherDB containing only the matched devices
 
 Because it streams rather than loading the entire file into memory, it handles large databases efficiently.
 
@@ -77,5 +77,6 @@ dbredraw-apl_arm64
 dbredraw-lnx32
 dbredraw-lnx64
 dbredraw-win32.exe
+```
 dbredraw-win64.exe
 ```
