@@ -68,7 +68,7 @@ go build -o dbredraw main.go
 
 Each line in a GatherDB file begins with a device name (the first whitespace-separated token), followed by the data collected from that device. dbredraw uses this convention to group and filter lines by device.
 
-## Compiling instructions in the notes.txt file
+## Compiling instructions for different operating systems in the notes.txt file
 
 ## Binaries avaliable in this repo
 ```
